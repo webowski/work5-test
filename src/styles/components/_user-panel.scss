@@ -1,0 +1,59 @@
+.user-panel {
+	display: flex;
+	gap: 1rem;
+}
+
+.messages-button {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 4.125rem;
+	height: 4.125rem;
+	color: var(--major);
+	border: 1px solid #d4d4d4;
+	border-radius: var(--radius-sm);
+}
+
+.messages-button__icon {
+	position: relative;
+}
+
+.messages-button__indicator {
+	width: .625rem;
+	height: .625rem;
+	border: 3px solid var(--bg-light);
+	position: absolute;
+	top: -0.1875rem;
+	right: -0.25rem;
+	background-color: var(--danger);
+	border-radius: .625rem;
+}
+
+.messages-button:hover {
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+.user {
+	padding: .625rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--bg-light);
+	box-shadow: var(--glow);
+	border-radius: var(--radius-sm);
+	color: var(--major);
+}
+
+.user__avatar {
+	width: 2.875rem;
+	height: 2.875rem;
+	border-radius: 2.875rem;
+}
+
+.user:hover {
+	background-color: var(--primary);
+	color: var(--inverse);
+}

@@ -1,0 +1,15 @@
+{
+	"projectName": "Work5",
+	"lang": "ru",
+	"nav": [
+		{ "url": "#", "icon": "home", "title": "Главная" },
+		{ "url": "/", "icon": "cart", "title": "Мои магазины" },
+		{ "url": "#", "icon": "megaphone", "title": "Промоматериалы" },
+		{ "url": "#", "icon": "pie-chart", "title": "Статистика" },
+		{ "url": "#", "icon": "wallet", "title": "Баланс" },
+		{ "url": "#", "icon": "profile", "title": "Персональные данные" },
+		{ "url": "#", "icon": "question", "title": "FAQ" },
+		{ "url": "#", "icon": "multimedia", "title": "Техподдержка" },
+		{ "url": "#", "icon": "logout", "title": "Выход" }
+	]
+}

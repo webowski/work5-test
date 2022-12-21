@@ -1,0 +1,20 @@
+body {
+	background-color: var(--bg);
+}
+
+.wrap {
+	min-height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+	display: grid;
+
+	@include mediaUp(md) {
+		grid-template-columns: 16rem auto;
+	}
+}
+
+.main {
+	padding-top: 1.25rem;
+	padding-bottom: 2rem;
+	min-width: 1px;
+}

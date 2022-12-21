@@ -1,0 +1,51 @@
+:root {
+	// Text
+	--fontMain: #{$fontMain};
+	--fontSize: .875rem;
+	--lineHeight: 1.5;
+
+	// Color
+	--primary: #{$blue};
+	--success: #{$green};
+	--danger: #{$red};
+	--intense: #{$gray-700};
+	--major: #{$gray-550};
+	--minor: #{$gray-500};
+		--muted: #{$gray-400};
+	--light: #{$gray-300};
+	--lighter: #{$gray-200};
+	--lightest: #{$gray-100};
+		--disabled: #{$gray-300};
+	--inverse: #{$white};
+	--bg: #{$gray-100};
+	--bg-light: #{$white};
+	--border: #{$gray-300};
+
+	--glow: #{0 0 16px rgba(#88a7f5, .18)};
+
+	// Dimensions
+	--containerMax: 1600px;
+	--sidePadding: clamp(1.25rem, 4.3vw, 3.75rem);
+	--sidePaddingL: var(--sidePadding);
+	--sidePaddingR: var(--sidePadding);
+
+	// Shape
+	--radius-xs: 3px;
+	--radius-sm: 4px;
+
+	// Animation
+	--duration-sm: 0.12s;
+	--duration-md: 0.2s;
+	--duration-lg: 0.3s;
+	--duration-xl: 0.6s;
+	--duration-xxl: 1s;
+
+	// Bootstrap overrides
+	--bs-link-color: #{$blue};
+	--bs-link-hover-color: #{lighten($blue,15)};
+	--bs-border-color: var(--border);
+
+	@include mediaUp(xl) {
+		--sidePaddingR: clamp(4rem, 8.6vw, 7.75rem);
+	}
+}

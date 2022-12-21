@@ -1,0 +1,37 @@
+.btn {
+	--bs-btn-font-size: .75rem;
+	--bs-btn-line-height: 1.25rem;
+	--bs-btn-border-radius: var(--radius-xs);
+	--bs-btn-padding-x: 1.25rem;
+	--bs-btn-padding-y: .5rem;
+	--bs-btn-font-weight: 400;
+	--bs-btn-border-color: transparent;
+	--bs-btn-hover-border-color: transparent;
+	--bs-btn-active-border-color: transparent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: .625rem;
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn-success {
+	--bs-btn-color: var(--inverse);
+	--bs-btn-bg: var(--success);
+	--bs-btn-hover-color: var(--inverse);
+	--bs-btn-active-color: var(--inverse);
+}
+
+.btn-secondary {
+	--bs-btn-color: var(--inverse);
+	--bs-btn-bg: var(--light);
+	--bs-btn-hover-color: var(--inverse);
+	--bs-btn-active-color: var(--inverse);
+}
+
+.btn-w-icon {
+	padding-left: 1rem;
+}

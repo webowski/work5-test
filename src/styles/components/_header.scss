@@ -1,0 +1,36 @@
+.header {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	z-index: 50;
+	background-color: var(--bg-light);
+}
+
+.header__container {
+	padding-left: var(--sidePadding);
+	padding-right: var(--sidePadding);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include mediaUp(md) {
+		padding-left: 1.125rem;
+		padding-right: 1.125rem;
+	}
+}
+
+.logo {
+	@include linkReset;
+	display: block;
+	width: 86px;
+	flex-shrink: 0;
+	margin-left: -4px;
+
+	@include mediaUp(md) {
+		width: fit-content;
+	}
+}
+
+.logo img {
+	display: block;
+	width: 100%;
+}

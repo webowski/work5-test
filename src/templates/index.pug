@@ -1,0 +1,136 @@
+extends base/layout.pug
+
+block variables
+	- var currentUrl = '/'
+
+block main
+
+	include partials/top-panel
+
+	<div class="container">
+
+		<button class="btn btn-success btn-w-icon do-popup-opener" data-target-popup="#popupCreateWebsite">
+			+icon("plus").icon--xs
+			| Создать свой магазин
+		</button>
+
+		<div class="popup-origin">
+			<section class="popup popup--in-content" id="popupCreateWebsite">
+				<div class="popup__header">
+					<h1 class="popup__title">Создать магазин</h1>
+					<button type="button" class="popup__closer do-popup-closer">
+						+icon("cross")
+					</button>
+				</div>
+				<div class="popup__body">
+
+					<div class="row justify-content-between">
+						<div class="col-24 col-sm-12 col-md-11">
+
+							<label for="websiteTemplate" class="form-label">Шаблон</label>
+							<select class="form-select" id="websiteTemplate">
+								<option value="1" selected>Стандартный</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+
+						</div>
+						<div class="col-24 col-sm-12 col-md-11 mt-150 mt-sm-0">
+
+							<label for="websiteColors" class="form-label">Цветовая схема</label>
+							<select class="form-select" id="websiteColors">
+								<option value="1" selected>Классическая</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+
+						</div>
+						<div class="col-24 mt-150 mt-sm-200">
+
+							<label for="websiteDomain" class="form-label">Домен</label>
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Например: ivangrozniy">
+								<span class="input-group-text" id="websiteDomain">.work5.ru</span>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="row gutter-100 mt-200 align-items-center">
+						<div class="col-auto">
+
+							+icon("exclamation").icon--2xl.text-primary
+
+						</div>
+						<div class="col">
+
+							<p class="fz-xs">В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="">ссылке</a></p>
+
+						</div>
+					</div>
+				</div>
+				<div class="popup__footer row gutter-0625">
+					<div class="col-12 col-sm-9 col-md-7">
+						<button type="button" class="btn btn-secondary w-100 do-popup-closer">Отмена</button>
+					</div>
+					<div class="col-12 col-sm-9 col-md-7">
+						<button type="button" class="btn btn-success w-100 do-popup-closer">Создать</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<h1>Управление магазинами</h1>
+
+		<div class="box table-responsive">
+			<table class="table align-middle">
+				<thead>
+					<tr>
+						<th>№</th>
+						<th>Название</th>
+						<th>Адрес</th>
+						<th>Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>12345</td>
+						<td>Дипломная работа</td>
+						<td>http://www.work5.ru/services</td>
+						<td>
+							<div class="hstack gap-0625">
+								<button class="btn btn-success btn-w-icon">
+									+icon("pencil").icon--sm.icon--transparent
+									<span>Редактировать</span>
+								</button>
+
+								<button class="btn btn-secondary btn-w-icon">
+									+icon("cross").icon--sm.icon--transparent
+									<span>Редактировать</span>
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>12345</td>
+						<td>Дипломная работа</td>
+						<td>http://www.work5.ru/services</td>
+						<td>
+							<div class="hstack gap-0625">
+								<button class="btn btn-success btn-w-icon">
+									+icon("pencil").icon--sm.icon--transparent
+									<span>Редактировать</span>
+								</button>
+
+								<button class="btn btn-secondary btn-w-icon">
+									+icon("cross").icon--sm.icon--transparent
+									<span>Редактировать</span>
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>

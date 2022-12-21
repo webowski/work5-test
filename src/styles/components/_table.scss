@@ -1,0 +1,34 @@
+.table {
+	@include flowMargin;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	color: var(--major);
+
+	tr > td:first-child,
+	tr > th:first-child {
+		padding-left: 0;
+	}
+	tr > td:last-child,
+	tr > th:last-child {
+		padding-right: 0;
+	}
+
+	> :not(caption) > * > * {
+    padding: 1.1rem 1rem;
+	}
+
+	tbody tr:last-child > td,
+	thead tr:last-child > th {
+		border-bottom: none;
+	}
+
+	thead tr > th {
+		padding-top: 0;
+		padding-bottom: .5rem;
+		color: var(--intense);
+	}
+
+	tbody tr:last-child > td {
+		padding-bottom: 0;
+	}
+}

@@ -1,0 +1,34 @@
+<header class="header">
+
+	<div class="header__container">
+
+		<a href="/" class="logo" aria-label="logo">
+			img(src=require('~/images/logo.png') alt=data.projectName)
+		</a>
+
+		<button class="nav-mobile-opener collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-expanded="false" aria-controls="navMain">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</button>
+
+	</div>
+
+	<nav class="nav-main collapse" id="navMain">
+		<ul>
+			each item in data.nav
+				<li class="nav-main__item#{item.url === currentUrl ? ' is-current' : ''}">
+					<a href="#{item.url}">
+						<div class="nav-main__item-logo">
+							+icon(item.icon)
+						</div>
+						| #{item.title}
+					</a>
+				</li>
+		</ul>
+	</nav>
+
+</header>

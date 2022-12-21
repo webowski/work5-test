@@ -1,0 +1,38 @@
+.breadcrumbs {
+	@include listReset;
+	display: flex;
+	gap: .375rem;
+	color: var(--major);
+	font-size: .75rem;
+	font-weight: 400;
+}
+
+.breadcrumbs li {
+	display: flex;
+	align-items: center;
+	gap: .375rem;
+	white-space: nowrap;
+}
+
+.breadcrumbs li::before {
+	@include pseudoBlock(9px, 7px);
+	position: static;
+	background-color: currentColor;
+	mask-image: url('../images/icons/chevron.svg');
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transform: rotate(-90deg);
+}
+
+.breadcrumbs li:first-child::before {
+	display: none;
+}
+
+.breadcrumbs a {
+	color: currentColor;
+}
+
+.breadcrumbs a:hover {
+	color: var(--primary);
+}

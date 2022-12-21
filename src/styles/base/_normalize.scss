@@ -1,0 +1,30 @@
+html {
+	cursor: default;
+}
+
+input,
+textarea,
+button {
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	color: inherit;
+}
+
+button {
+	touch-action: manipulation;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+:focus {
+	outline: none;
+}
+
+:focus-visible {
+	border-radius: var(--radius-xs);
+	outline: 4px solid rgba(50,151,211,.3);
+}

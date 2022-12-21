@@ -1,0 +1,9 @@
+.box {
+	padding: 2rem;
+	margin-top: 1.625rem;
+	margin-bottom: 1.625rem;
+	@include flowMargin;
+	background-color: var(--bg-light);
+	border-radius: .5rem;
+	box-shadow: 0 11px 21px rgba(#282828, .07);
+}

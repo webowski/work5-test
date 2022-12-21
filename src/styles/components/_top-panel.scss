@@ -1,0 +1,14 @@
+.top-panel {
+	--sidePaddingR: 1rem;
+	@include container;
+	margin-bottom: .625rem;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: column-reverse;
+
+	@include mediaUp(lg) {
+		flex-direction: row;
+	}
+}
