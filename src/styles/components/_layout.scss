@@ -4,12 +4,13 @@ body {
 
 .wrap {
 	min-height: 100vh;
-	overflow-x: hidden;
 	position: relative;
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 
 	@include mediaUp(md) {
-		grid-template-columns: 16rem auto;
+		flex-direction: row;
 	}
 }
 
@@ -17,4 +18,8 @@ body {
 	padding-top: 1.25rem;
 	padding-bottom: 2rem;
 	min-width: 1px;
+
+	@include mediaUp(md) {
+		flex: 1;
+	}
 }
